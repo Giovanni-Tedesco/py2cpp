@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -flto -shared  -o cmake_pets.cpython-39-x86_64-linux-gnu.so CMakeFiles/cmake_pets.dir/src/my_new_example.cpp.o 

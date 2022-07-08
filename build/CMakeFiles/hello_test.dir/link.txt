@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/hello_test.dir/test/hello_test.cpp.o CMakeFiles/hello_test.dir/test/pet_test.cpp.o -o hello_test  -Wl,-rpath,/home/giovanni/py2cpp2/build lib/libgtest_main.a libcmake_example_lib.so lib/libgtest.a -lpthread 
