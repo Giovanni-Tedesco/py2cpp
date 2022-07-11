@@ -73,57 +73,57 @@ CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o: CMakeFiles/hello_test.dir
 CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o: ../test/dual_number_test.cpp
 CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o: CMakeFiles/hello_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o -MF CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o.d -o CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/dual_number_test.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o -MF CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o.d -o CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/dual_number_test.cpp
 
 CMakeFiles/hello_test.dir/test/dual_number_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/test/dual_number_test.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/test/dual_number_test.cpp > CMakeFiles/hello_test.dir/test/dual_number_test.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/test/dual_number_test.cpp > CMakeFiles/hello_test.dir/test/dual_number_test.cpp.i
 
 CMakeFiles/hello_test.dir/test/dual_number_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/test/dual_number_test.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/test/dual_number_test.cpp -o CMakeFiles/hello_test.dir/test/dual_number_test.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/test/dual_number_test.cpp -o CMakeFiles/hello_test.dir/test/dual_number_test.cpp.s
 
 CMakeFiles/hello_test.dir/test/hello_test.cpp.o: CMakeFiles/hello_test.dir/flags.make
 CMakeFiles/hello_test.dir/test/hello_test.cpp.o: ../test/hello_test.cpp
 CMakeFiles/hello_test.dir/test/hello_test.cpp.o: CMakeFiles/hello_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hello_test.dir/test/hello_test.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/test/hello_test.cpp.o -MF CMakeFiles/hello_test.dir/test/hello_test.cpp.o.d -o CMakeFiles/hello_test.dir/test/hello_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/hello_test.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/test/hello_test.cpp.o -MF CMakeFiles/hello_test.dir/test/hello_test.cpp.o.d -o CMakeFiles/hello_test.dir/test/hello_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/hello_test.cpp
 
 CMakeFiles/hello_test.dir/test/hello_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/test/hello_test.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/test/hello_test.cpp > CMakeFiles/hello_test.dir/test/hello_test.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/test/hello_test.cpp > CMakeFiles/hello_test.dir/test/hello_test.cpp.i
 
 CMakeFiles/hello_test.dir/test/hello_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/test/hello_test.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/test/hello_test.cpp -o CMakeFiles/hello_test.dir/test/hello_test.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/test/hello_test.cpp -o CMakeFiles/hello_test.dir/test/hello_test.cpp.s
 
 CMakeFiles/hello_test.dir/test/pet_test.cpp.o: CMakeFiles/hello_test.dir/flags.make
 CMakeFiles/hello_test.dir/test/pet_test.cpp.o: ../test/pet_test.cpp
 CMakeFiles/hello_test.dir/test/pet_test.cpp.o: CMakeFiles/hello_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hello_test.dir/test/pet_test.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/test/pet_test.cpp.o -MF CMakeFiles/hello_test.dir/test/pet_test.cpp.o.d -o CMakeFiles/hello_test.dir/test/pet_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/pet_test.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/test/pet_test.cpp.o -MF CMakeFiles/hello_test.dir/test/pet_test.cpp.o.d -o CMakeFiles/hello_test.dir/test/pet_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/pet_test.cpp
 
 CMakeFiles/hello_test.dir/test/pet_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/test/pet_test.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/test/pet_test.cpp > CMakeFiles/hello_test.dir/test/pet_test.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/test/pet_test.cpp > CMakeFiles/hello_test.dir/test/pet_test.cpp.i
 
 CMakeFiles/hello_test.dir/test/pet_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/test/pet_test.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/test/pet_test.cpp -o CMakeFiles/hello_test.dir/test/pet_test.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/test/pet_test.cpp -o CMakeFiles/hello_test.dir/test/pet_test.cpp.s
 
 CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o: CMakeFiles/hello_test.dir/flags.make
 CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o: ../test/test_ForwardAD.cpp
 CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o: CMakeFiles/hello_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o -MF CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o.d -o CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/test_ForwardAD.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o -MF CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o.d -o CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/test_ForwardAD.cpp
 
 CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/test/test_ForwardAD.cpp > CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/test/test_ForwardAD.cpp > CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.i
 
 CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/test/test_ForwardAD.cpp -o CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/test/test_ForwardAD.cpp -o CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.s
 
 # Object files for target hello_test
 hello_test_OBJECTS = \
@@ -140,9 +140,9 @@ hello_test: CMakeFiles/hello_test.dir/test/hello_test.cpp.o
 hello_test: CMakeFiles/hello_test.dir/test/pet_test.cpp.o
 hello_test: CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o
 hello_test: CMakeFiles/hello_test.dir/build.make
-hello_test: lib/libgtest_main.a
+hello_test: lib/libgtest_maind.a
 hello_test: libcmake_example_lib.dylib
-hello_test: lib/libgtest.a
+hello_test: lib/libgtestd.a
 hello_test: CMakeFiles/hello_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable hello_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_test.dir/link.txt --verbose=$(VERBOSE)

@@ -334,6 +334,30 @@ python/example.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/example.cpp.s
 .PHONY : python/example.cpp.s
 
+python/init_dualnumber.o: python/init_dualnumber.cpp.o
+.PHONY : python/init_dualnumber.o
+
+# target to build an object file
+python/init_dualnumber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/init_dualnumber.cpp.o
+.PHONY : python/init_dualnumber.cpp.o
+
+python/init_dualnumber.i: python/init_dualnumber.cpp.i
+.PHONY : python/init_dualnumber.i
+
+# target to preprocess a source file
+python/init_dualnumber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/init_dualnumber.cpp.i
+.PHONY : python/init_dualnumber.cpp.i
+
+python/init_dualnumber.s: python/init_dualnumber.cpp.s
+.PHONY : python/init_dualnumber.s
+
+# target to generate assembly for a file
+python/init_dualnumber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/init_dualnumber.cpp.s
+.PHONY : python/init_dualnumber.cpp.s
+
 python/init_forwardad.o: python/init_forwardad.cpp.o
 .PHONY : python/init_forwardad.o
 
@@ -564,6 +588,9 @@ help:
 	@echo "... python/example.o"
 	@echo "... python/example.i"
 	@echo "... python/example.s"
+	@echo "... python/init_dualnumber.o"
+	@echo "... python/init_dualnumber.i"
+	@echo "... python/init_dualnumber.s"
 	@echo "... python/init_forwardad.o"
 	@echo "... python/init_forwardad.i"
 	@echo "... python/init_forwardad.s"

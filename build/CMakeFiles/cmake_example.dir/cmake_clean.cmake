@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cmake_example.dir/python/entry.cpp.o.d"
   "CMakeFiles/cmake_example.dir/python/example.cpp.o"
   "CMakeFiles/cmake_example.dir/python/example.cpp.o.d"
+  "CMakeFiles/cmake_example.dir/python/init_dualnumber.cpp.o"
+  "CMakeFiles/cmake_example.dir/python/init_dualnumber.cpp.o.d"
   "CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o"
   "CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o.d"
   "CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o"

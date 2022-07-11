@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/johntedesco/KDS/git/py2cpp/python/class_example.cpp" "CMakeFiles/cmake_example.dir/python/class_example.cpp.o" "gcc" "CMakeFiles/cmake_example.dir/python/class_example.cpp.o.d"
   "/Users/johntedesco/KDS/git/py2cpp/python/entry.cpp" "CMakeFiles/cmake_example.dir/python/entry.cpp.o" "gcc" "CMakeFiles/cmake_example.dir/python/entry.cpp.o.d"
   "/Users/johntedesco/KDS/git/py2cpp/python/example.cpp" "CMakeFiles/cmake_example.dir/python/example.cpp.o" "gcc" "CMakeFiles/cmake_example.dir/python/example.cpp.o.d"
+  "/Users/johntedesco/KDS/git/py2cpp/python/init_dualnumber.cpp" "CMakeFiles/cmake_example.dir/python/init_dualnumber.cpp.o" "gcc" "CMakeFiles/cmake_example.dir/python/init_dualnumber.cpp.o.d"
   "/Users/johntedesco/KDS/git/py2cpp/python/init_forwardad.cpp" "CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o" "gcc" "CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o.d"
   "/Users/johntedesco/KDS/git/py2cpp/src/DualNumber.cpp" "CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o" "gcc" "CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o.d"
   "/Users/johntedesco/KDS/git/py2cpp/src/ForwardAutoDiff.cpp" "CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o" "gcc" "CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o.d"

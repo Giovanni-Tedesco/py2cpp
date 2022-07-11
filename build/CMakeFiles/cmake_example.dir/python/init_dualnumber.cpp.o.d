@@ -1,5 +1,5 @@
-CMakeFiles/cmake_example.dir/python/my_new_example.cpp.o: \
-  /Users/johntedesco/KDS/git/py2cpp/python/my_new_example.cpp \
+CMakeFiles/cmake_example.dir/python/init_dualnumber.cpp.o: \
+  /Users/johntedesco/KDS/git/py2cpp/python/init_dualnumber.cpp \
   /opt/homebrew/include/pybind11/pybind11.h \
   /opt/homebrew/include/pybind11/detail/class.h \
   /opt/homebrew/include/pybind11/detail/../attr.h \
@@ -524,4 +524,6 @@ CMakeFiles/cmake_example.dir/python/my_new_example.cpp.o: \
   /opt/homebrew/include/pybind11/attr.h \
   /opt/homebrew/include/pybind11/gil.h \
   /opt/homebrew/include/pybind11/options.h \
-  /Users/johntedesco/KDS/git/py2cpp/python/../include/Pet.hpp
+  /opt/homebrew/include/pybind11/operators.h \
+  /Users/johntedesco/KDS/git/py2cpp/python/../include/ForwardAutoDiff.hpp \
+  /Users/johntedesco/KDS/git/py2cpp/python/../include/DualNumber.hpp
