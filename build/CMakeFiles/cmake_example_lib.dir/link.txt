@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -dynamiclib -Wl,-headerpad_max_install_names -o libcmake_example_lib.dylib -install_name @rpath/libcmake_example_lib.dylib CMakeFiles/cmake_example_lib.dir/src/DualNumber.cpp.o CMakeFiles/cmake_example_lib.dir/src/ForwardAutoDiff.cpp.o CMakeFiles/cmake_example_lib.dir/src/Pet.cpp.o 
