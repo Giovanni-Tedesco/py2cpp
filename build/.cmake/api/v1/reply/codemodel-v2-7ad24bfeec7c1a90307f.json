@@ -22,7 +22,7 @@
 					[
 						0,
 						1,
-						6
+						2
 					]
 				},
 				{
@@ -48,7 +48,7 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-320362cc044b5d7a0ee2.json",
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-b0bc411bec0dc98baf96.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "2.8.12"
@@ -58,14 +58,14 @@
 					"source" : "build/_deps/googletest-src/googlemock",
 					"targetIndexes" : 
 					[
-						2,
-						3
+						3,
+						4
 					]
 				},
 				{
 					"build" : "_deps/googletest-build/googletest",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-8218575dd43f75672034.json",
+					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-1bd353013b553087d1c3.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "2.8.12"
@@ -75,8 +75,8 @@
 					"source" : "build/_deps/googletest-src/googletest",
 					"targetIndexes" : 
 					[
-						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -97,7 +97,7 @@
 					[
 						0,
 						1,
-						6
+						2
 					]
 				},
 				{
@@ -125,8 +125,8 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						2,
-						3
+						3,
+						4
 					]
 				},
 				{
@@ -138,8 +138,8 @@
 					"parentIndex" : 2,
 					"targetIndexes" : 
 					[
-						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -148,7 +148,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "cmake_example::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cmake_example-Debug-ba9a45c0f3244aa6d58b.json",
+					"jsonFile" : "target-cmake_example-Debug-b01caa471d3dc45112eb.json",
 					"name" : "cmake_example",
 					"projectIndex" : 0
 				},
@@ -157,6 +157,13 @@
 					"id" : "cmake_example_lib::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-cmake_example_lib-Debug-d07b04808efd8cbdacd9.json",
 					"name" : "cmake_example_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cmake_example_tests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cmake_example_tests-Debug-04ca8918178e1a888a51.json",
+					"name" : "cmake_example_tests",
 					"projectIndex" : 0
 				},
 				{
@@ -186,13 +193,6 @@
 					"jsonFile" : "target-gtest_main-Debug-e9569396082b7003691c.json",
 					"name" : "gtest_main",
 					"projectIndex" : 3
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "hello_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hello_test-Debug-f8890267c72ed4c8895a.json",
-					"name" : "hello_test",
-					"projectIndex" : 0
 				}
 			]
 		}

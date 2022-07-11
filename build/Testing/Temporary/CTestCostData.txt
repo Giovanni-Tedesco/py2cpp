@@ -1,11 +1,11 @@
-HelloTest.BasicAssertions 19 0.000244314
-PetTest.PetAssertions 19 0.00031582
+HelloTest.BasicAssertions 20 0.000164915
+PetTest.PetAssertions 20 0.000156662
 SquareTest.SomeAssertion 2 0.00205498
 FADTEST.SomethingHere 3 0.000711375
-FADTEST.TestSetFunction 9 0.000591037
-SquareTest.DerivativeAssertions 3 0.00151801
-SinWorksTest.DerivativeAssertions 3 0.00167536
-CosWorksTest.DerivativeAssertions 3 0.00165035
-ExpWorksTest.DerivativeAssertions 1 0.00408217
-LogWorksTest.DerivativeAssertions 3 0.00280822
+FADTEST.TestSetFunction 10 0.000299521
+SquareTest.DerivativeAssertions 4 0.00115625
+SinWorksTest.DerivativeAssertions 4 0.000954885
+CosWorksTest.DerivativeAssertions 4 0.00108259
+ExpWorksTest.DerivativeAssertions 2 0.00171127
+LogWorksTest.DerivativeAssertions 4 0.00121615
 ---

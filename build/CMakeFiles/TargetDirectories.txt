@@ -1,6 +1,6 @@
 /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles/cmake_example_lib.dir
 /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles/cmake_example.dir
-/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles/hello_test.dir
+/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles/cmake_example_tests.dir
 /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles/test.dir
 /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles/edit_cache.dir
 /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles/rebuild_cache.dir

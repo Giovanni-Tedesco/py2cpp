@@ -56,22 +56,22 @@
 },
 {
   "directory": "/Users/johntedesco/KDS/git/py2cpp/build",
-  "command": "/usr/bin/clang++  -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/include -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14 -o CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/dual_number_test.cpp",
+  "command": "/usr/bin/clang++  -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/include -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14 -o CMakeFiles/cmake_example_tests.dir/test/dual_number_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/dual_number_test.cpp",
   "file": "/Users/johntedesco/KDS/git/py2cpp/test/dual_number_test.cpp"
 },
 {
   "directory": "/Users/johntedesco/KDS/git/py2cpp/build",
-  "command": "/usr/bin/clang++  -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/include -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14 -o CMakeFiles/hello_test.dir/test/hello_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/hello_test.cpp",
+  "command": "/usr/bin/clang++  -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/include -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14 -o CMakeFiles/cmake_example_tests.dir/test/hello_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/hello_test.cpp",
   "file": "/Users/johntedesco/KDS/git/py2cpp/test/hello_test.cpp"
 },
 {
   "directory": "/Users/johntedesco/KDS/git/py2cpp/build",
-  "command": "/usr/bin/clang++  -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/include -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14 -o CMakeFiles/hello_test.dir/test/pet_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/pet_test.cpp",
+  "command": "/usr/bin/clang++  -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/include -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14 -o CMakeFiles/cmake_example_tests.dir/test/pet_test.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/pet_test.cpp",
   "file": "/Users/johntedesco/KDS/git/py2cpp/test/pet_test.cpp"
 },
 {
   "directory": "/Users/johntedesco/KDS/git/py2cpp/build",
-  "command": "/usr/bin/clang++  -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/include -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14 -o CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/test_ForwardAD.cpp",
+  "command": "/usr/bin/clang++  -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/include -isystem /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14 -o CMakeFiles/cmake_example_tests.dir/test/test_ForwardAD.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/test/test_ForwardAD.cpp",
   "file": "/Users/johntedesco/KDS/git/py2cpp/test/test_ForwardAD.cpp"
 },
 {

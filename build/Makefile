@@ -198,17 +198,17 @@ cmake_example/fast:
 .PHONY : cmake_example/fast
 
 #=============================================================================
-# Target rules for targets named hello_test
+# Target rules for targets named cmake_example_tests
 
 # Build rule for target.
-hello_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_test
-.PHONY : hello_test
+cmake_example_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake_example_tests
+.PHONY : cmake_example_tests
 
 # fast build rule for target.
-hello_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/build
-.PHONY : hello_test/fast
+cmake_example_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/build
+.PHONY : cmake_example_tests/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -468,7 +468,7 @@ test/dual_number_test.o: test/dual_number_test.cpp.o
 
 # target to build an object file
 test/dual_number_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/dual_number_test.cpp.o
 .PHONY : test/dual_number_test.cpp.o
 
 test/dual_number_test.i: test/dual_number_test.cpp.i
@@ -476,7 +476,7 @@ test/dual_number_test.i: test/dual_number_test.cpp.i
 
 # target to preprocess a source file
 test/dual_number_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/dual_number_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/dual_number_test.cpp.i
 .PHONY : test/dual_number_test.cpp.i
 
 test/dual_number_test.s: test/dual_number_test.cpp.s
@@ -484,7 +484,7 @@ test/dual_number_test.s: test/dual_number_test.cpp.s
 
 # target to generate assembly for a file
 test/dual_number_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/dual_number_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/dual_number_test.cpp.s
 .PHONY : test/dual_number_test.cpp.s
 
 test/hello_test.o: test/hello_test.cpp.o
@@ -492,7 +492,7 @@ test/hello_test.o: test/hello_test.cpp.o
 
 # target to build an object file
 test/hello_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/hello_test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/hello_test.cpp.o
 .PHONY : test/hello_test.cpp.o
 
 test/hello_test.i: test/hello_test.cpp.i
@@ -500,7 +500,7 @@ test/hello_test.i: test/hello_test.cpp.i
 
 # target to preprocess a source file
 test/hello_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/hello_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/hello_test.cpp.i
 .PHONY : test/hello_test.cpp.i
 
 test/hello_test.s: test/hello_test.cpp.s
@@ -508,7 +508,7 @@ test/hello_test.s: test/hello_test.cpp.s
 
 # target to generate assembly for a file
 test/hello_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/hello_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/hello_test.cpp.s
 .PHONY : test/hello_test.cpp.s
 
 test/pet_test.o: test/pet_test.cpp.o
@@ -516,7 +516,7 @@ test/pet_test.o: test/pet_test.cpp.o
 
 # target to build an object file
 test/pet_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/pet_test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/pet_test.cpp.o
 .PHONY : test/pet_test.cpp.o
 
 test/pet_test.i: test/pet_test.cpp.i
@@ -524,7 +524,7 @@ test/pet_test.i: test/pet_test.cpp.i
 
 # target to preprocess a source file
 test/pet_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/pet_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/pet_test.cpp.i
 .PHONY : test/pet_test.cpp.i
 
 test/pet_test.s: test/pet_test.cpp.s
@@ -532,7 +532,7 @@ test/pet_test.s: test/pet_test.cpp.s
 
 # target to generate assembly for a file
 test/pet_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/pet_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/pet_test.cpp.s
 .PHONY : test/pet_test.cpp.s
 
 test/test_ForwardAD.o: test/test_ForwardAD.cpp.o
@@ -540,7 +540,7 @@ test/test_ForwardAD.o: test/test_ForwardAD.cpp.o
 
 # target to build an object file
 test/test_ForwardAD.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/test_ForwardAD.cpp.o
 .PHONY : test/test_ForwardAD.cpp.o
 
 test/test_ForwardAD.i: test/test_ForwardAD.cpp.i
@@ -548,7 +548,7 @@ test/test_ForwardAD.i: test/test_ForwardAD.cpp.i
 
 # target to preprocess a source file
 test/test_ForwardAD.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/test_ForwardAD.cpp.i
 .PHONY : test/test_ForwardAD.cpp.i
 
 test/test_ForwardAD.s: test/test_ForwardAD.cpp.s
@@ -556,7 +556,7 @@ test/test_ForwardAD.s: test/test_ForwardAD.cpp.s
 
 # target to generate assembly for a file
 test/test_ForwardAD.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_tests.dir/build.make CMakeFiles/cmake_example_tests.dir/test/test_ForwardAD.cpp.s
 .PHONY : test/test_ForwardAD.cpp.s
 
 # Help Target
@@ -574,11 +574,11 @@ help:
 	@echo "... test"
 	@echo "... cmake_example"
 	@echo "... cmake_example_lib"
+	@echo "... cmake_example_tests"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... hello_test"
 	@echo "... python/class_example.o"
 	@echo "... python/class_example.i"
 	@echo "... python/class_example.s"

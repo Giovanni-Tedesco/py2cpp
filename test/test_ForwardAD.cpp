@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "../include/ForwardAutoDiff.hpp"
 #include "../include/DualNumber.hpp"
+#include <functional>
 
 DualNumber square(DualNumber x) {
     return x * x;
@@ -9,13 +10,14 @@ DualNumber square(DualNumber x) {
 TEST(FADTEST, TestSetFunction) {
     ForwardAutoDiff test;
 
-    test.setFunction(square);
+    std::function<DualNumber(DualNumber)> f = square;
+
+    test.setFunction(f);
     
     DualNumber results = test.deriveAt(3);
-    DualNumber expected{6, 9};
-
-    std::
+    DualNumber expected{6, 6};
 
     EXPECT_EQ(results.getReal(), expected.getReal());
+    EXPECT_EQ(results.getImag(), expected.getImag());
 
 }  

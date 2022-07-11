@@ -1,10 +1,10 @@
-Start testing: Jul 11 16:27 EDT
+Start testing: Jul 11 16:36 EDT
 ----------------------------------------------------------
 1/8 Testing: SquareTest.DerivativeAssertions
 1/8 Test: SquareTest.DerivativeAssertions
-Command: "/Users/johntedesco/KDS/git/py2cpp/build/hello_test" "--gtest_filter=SquareTest.DerivativeAssertions" "--gtest_also_run_disabled_tests"
+Command: "/Users/johntedesco/KDS/git/py2cpp/build/cmake_example_tests" "--gtest_filter=SquareTest.DerivativeAssertions" "--gtest_also_run_disabled_tests"
 Directory: /Users/johntedesco/KDS/git/py2cpp/build
-"SquareTest.DerivativeAssertions" start time: Jul 11 16:27 EDT
+"SquareTest.DerivativeAssertions" start time: Jul 11 16:36 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -23,15 +23,15 @@ Note: Google Test filter = SquareTest.DerivativeAssertions
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"SquareTest.DerivativeAssertions" end time: Jul 11 16:27 EDT
+"SquareTest.DerivativeAssertions" end time: Jul 11 16:36 EDT
 "SquareTest.DerivativeAssertions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 2/8 Testing: SinWorksTest.DerivativeAssertions
 2/8 Test: SinWorksTest.DerivativeAssertions
-Command: "/Users/johntedesco/KDS/git/py2cpp/build/hello_test" "--gtest_filter=SinWorksTest.DerivativeAssertions" "--gtest_also_run_disabled_tests"
+Command: "/Users/johntedesco/KDS/git/py2cpp/build/cmake_example_tests" "--gtest_filter=SinWorksTest.DerivativeAssertions" "--gtest_also_run_disabled_tests"
 Directory: /Users/johntedesco/KDS/git/py2cpp/build
-"SinWorksTest.DerivativeAssertions" start time: Jul 11 16:27 EDT
+"SinWorksTest.DerivativeAssertions" start time: Jul 11 16:36 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -47,18 +47,18 @@ Note: Google Test filter = SinWorksTest.DerivativeAssertions
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"SinWorksTest.DerivativeAssertions" end time: Jul 11 16:27 EDT
+"SinWorksTest.DerivativeAssertions" end time: Jul 11 16:36 EDT
 "SinWorksTest.DerivativeAssertions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 3/8 Testing: CosWorksTest.DerivativeAssertions
 3/8 Test: CosWorksTest.DerivativeAssertions
-Command: "/Users/johntedesco/KDS/git/py2cpp/build/hello_test" "--gtest_filter=CosWorksTest.DerivativeAssertions" "--gtest_also_run_disabled_tests"
+Command: "/Users/johntedesco/KDS/git/py2cpp/build/cmake_example_tests" "--gtest_filter=CosWorksTest.DerivativeAssertions" "--gtest_also_run_disabled_tests"
 Directory: /Users/johntedesco/KDS/git/py2cpp/build
-"CosWorksTest.DerivativeAssertions" start time: Jul 11 16:27 EDT
+"CosWorksTest.DerivativeAssertions" start time: Jul 11 16:36 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -77,15 +77,15 @@ Note: Google Test filter = CosWorksTest.DerivativeAssertions
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CosWorksTest.DerivativeAssertions" end time: Jul 11 16:27 EDT
+"CosWorksTest.DerivativeAssertions" end time: Jul 11 16:36 EDT
 "CosWorksTest.DerivativeAssertions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 4/8 Testing: ExpWorksTest.DerivativeAssertions
 4/8 Test: ExpWorksTest.DerivativeAssertions
-Command: "/Users/johntedesco/KDS/git/py2cpp/build/hello_test" "--gtest_filter=ExpWorksTest.DerivativeAssertions" "--gtest_also_run_disabled_tests"
+Command: "/Users/johntedesco/KDS/git/py2cpp/build/cmake_example_tests" "--gtest_filter=ExpWorksTest.DerivativeAssertions" "--gtest_also_run_disabled_tests"
 Directory: /Users/johntedesco/KDS/git/py2cpp/build
-"ExpWorksTest.DerivativeAssertions" start time: Jul 11 16:27 EDT
+"ExpWorksTest.DerivativeAssertions" start time: Jul 11 16:36 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -104,15 +104,15 @@ Note: Google Test filter = ExpWorksTest.DerivativeAssertions
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"ExpWorksTest.DerivativeAssertions" end time: Jul 11 16:27 EDT
+"ExpWorksTest.DerivativeAssertions" end time: Jul 11 16:36 EDT
 "ExpWorksTest.DerivativeAssertions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 5/8 Testing: LogWorksTest.DerivativeAssertions
 5/8 Test: LogWorksTest.DerivativeAssertions
-Command: "/Users/johntedesco/KDS/git/py2cpp/build/hello_test" "--gtest_filter=LogWorksTest.DerivativeAssertions" "--gtest_also_run_disabled_tests"
+Command: "/Users/johntedesco/KDS/git/py2cpp/build/cmake_example_tests" "--gtest_filter=LogWorksTest.DerivativeAssertions" "--gtest_also_run_disabled_tests"
 Directory: /Users/johntedesco/KDS/git/py2cpp/build
-"LogWorksTest.DerivativeAssertions" start time: Jul 11 16:27 EDT
+"LogWorksTest.DerivativeAssertions" start time: Jul 11 16:36 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -128,18 +128,18 @@ Note: Google Test filter = LogWorksTest.DerivativeAssertions
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"LogWorksTest.DerivativeAssertions" end time: Jul 11 16:27 EDT
+"LogWorksTest.DerivativeAssertions" end time: Jul 11 16:36 EDT
 "LogWorksTest.DerivativeAssertions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 6/8 Testing: HelloTest.BasicAssertions
 6/8 Test: HelloTest.BasicAssertions
-Command: "/Users/johntedesco/KDS/git/py2cpp/build/hello_test" "--gtest_filter=HelloTest.BasicAssertions" "--gtest_also_run_disabled_tests"
+Command: "/Users/johntedesco/KDS/git/py2cpp/build/cmake_example_tests" "--gtest_filter=HelloTest.BasicAssertions" "--gtest_also_run_disabled_tests"
 Directory: /Users/johntedesco/KDS/git/py2cpp/build
-"HelloTest.BasicAssertions" start time: Jul 11 16:27 EDT
+"HelloTest.BasicAssertions" start time: Jul 11 16:36 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -158,15 +158,15 @@ Note: Google Test filter = HelloTest.BasicAssertions
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"HelloTest.BasicAssertions" end time: Jul 11 16:27 EDT
+"HelloTest.BasicAssertions" end time: Jul 11 16:36 EDT
 "HelloTest.BasicAssertions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 7/8 Testing: PetTest.PetAssertions
 7/8 Test: PetTest.PetAssertions
-Command: "/Users/johntedesco/KDS/git/py2cpp/build/hello_test" "--gtest_filter=PetTest.PetAssertions" "--gtest_also_run_disabled_tests"
+Command: "/Users/johntedesco/KDS/git/py2cpp/build/cmake_example_tests" "--gtest_filter=PetTest.PetAssertions" "--gtest_also_run_disabled_tests"
 Directory: /Users/johntedesco/KDS/git/py2cpp/build
-"PetTest.PetAssertions" start time: Jul 11 16:27 EDT
+"PetTest.PetAssertions" start time: Jul 11 16:36 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -182,18 +182,18 @@ Note: Google Test filter = PetTest.PetAssertions
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PetTest.PetAssertions" end time: Jul 11 16:27 EDT
+"PetTest.PetAssertions" end time: Jul 11 16:36 EDT
 "PetTest.PetAssertions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 8/8 Testing: FADTEST.TestSetFunction
 8/8 Test: FADTEST.TestSetFunction
-Command: "/Users/johntedesco/KDS/git/py2cpp/build/hello_test" "--gtest_filter=FADTEST.TestSetFunction" "--gtest_also_run_disabled_tests"
+Command: "/Users/johntedesco/KDS/git/py2cpp/build/cmake_example_tests" "--gtest_filter=FADTEST.TestSetFunction" "--gtest_also_run_disabled_tests"
 Directory: /Users/johntedesco/KDS/git/py2cpp/build
-"FADTEST.TestSetFunction" start time: Jul 11 16:27 EDT
+"FADTEST.TestSetFunction" start time: Jul 11 16:36 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -209,11 +209,11 @@ Note: Google Test filter = FADTEST.TestSetFunction
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"FADTEST.TestSetFunction" end time: Jul 11 16:27 EDT
+"FADTEST.TestSetFunction" end time: Jul 11 16:36 EDT
 "FADTEST.TestSetFunction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 11 16:27 EDT
+End testing: Jul 11 16:36 EDT
