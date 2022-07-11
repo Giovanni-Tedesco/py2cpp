@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1088/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.23.2/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1088/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/giovanni/py2cpp2
+CMAKE_SOURCE_DIR = /Users/johntedesco/KDS/git/py2cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/giovanni/py2cpp2/build
+CMAKE_BINARY_DIR = /Users/johntedesco/KDS/git/py2cpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cmake_example.dir/depend.make
@@ -69,35 +69,131 @@ include CMakeFiles/cmake_example.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cmake_example.dir/flags.make
 
-CMakeFiles/cmake_example.dir/src/example.cpp.o: CMakeFiles/cmake_example.dir/flags.make
-CMakeFiles/cmake_example.dir/src/example.cpp.o: ../src/example.cpp
-CMakeFiles/cmake_example.dir/src/example.cpp.o: CMakeFiles/cmake_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/giovanni/py2cpp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cmake_example.dir/src/example.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cmake_example.dir/src/example.cpp.o -MF CMakeFiles/cmake_example.dir/src/example.cpp.o.d -o CMakeFiles/cmake_example.dir/src/example.cpp.o -c /home/giovanni/py2cpp2/src/example.cpp
+CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o: CMakeFiles/cmake_example.dir/flags.make
+CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o: ../src/DualNumber.cpp
+CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o: CMakeFiles/cmake_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o -MF CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o.d -o CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/src/DualNumber.cpp
 
-CMakeFiles/cmake_example.dir/src/example.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example.dir/src/example.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/giovanni/py2cpp2/src/example.cpp > CMakeFiles/cmake_example.dir/src/example.cpp.i
+CMakeFiles/cmake_example.dir/src/DualNumber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example.dir/src/DualNumber.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/src/DualNumber.cpp > CMakeFiles/cmake_example.dir/src/DualNumber.cpp.i
 
-CMakeFiles/cmake_example.dir/src/example.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example.dir/src/example.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giovanni/py2cpp2/src/example.cpp -o CMakeFiles/cmake_example.dir/src/example.cpp.s
+CMakeFiles/cmake_example.dir/src/DualNumber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example.dir/src/DualNumber.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/src/DualNumber.cpp -o CMakeFiles/cmake_example.dir/src/DualNumber.cpp.s
+
+CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o: CMakeFiles/cmake_example.dir/flags.make
+CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o: ../src/ForwardAutoDiff.cpp
+CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o: CMakeFiles/cmake_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o -MF CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o.d -o CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/src/ForwardAutoDiff.cpp
+
+CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/src/ForwardAutoDiff.cpp > CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.i
+
+CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/src/ForwardAutoDiff.cpp -o CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.s
+
+CMakeFiles/cmake_example.dir/src/Pet.cpp.o: CMakeFiles/cmake_example.dir/flags.make
+CMakeFiles/cmake_example.dir/src/Pet.cpp.o: ../src/Pet.cpp
+CMakeFiles/cmake_example.dir/src/Pet.cpp.o: CMakeFiles/cmake_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cmake_example.dir/src/Pet.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cmake_example.dir/src/Pet.cpp.o -MF CMakeFiles/cmake_example.dir/src/Pet.cpp.o.d -o CMakeFiles/cmake_example.dir/src/Pet.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/src/Pet.cpp
+
+CMakeFiles/cmake_example.dir/src/Pet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example.dir/src/Pet.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/src/Pet.cpp > CMakeFiles/cmake_example.dir/src/Pet.cpp.i
+
+CMakeFiles/cmake_example.dir/src/Pet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example.dir/src/Pet.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/src/Pet.cpp -o CMakeFiles/cmake_example.dir/src/Pet.cpp.s
+
+CMakeFiles/cmake_example.dir/python/class_example.cpp.o: CMakeFiles/cmake_example.dir/flags.make
+CMakeFiles/cmake_example.dir/python/class_example.cpp.o: ../python/class_example.cpp
+CMakeFiles/cmake_example.dir/python/class_example.cpp.o: CMakeFiles/cmake_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cmake_example.dir/python/class_example.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cmake_example.dir/python/class_example.cpp.o -MF CMakeFiles/cmake_example.dir/python/class_example.cpp.o.d -o CMakeFiles/cmake_example.dir/python/class_example.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/python/class_example.cpp
+
+CMakeFiles/cmake_example.dir/python/class_example.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example.dir/python/class_example.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/python/class_example.cpp > CMakeFiles/cmake_example.dir/python/class_example.cpp.i
+
+CMakeFiles/cmake_example.dir/python/class_example.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example.dir/python/class_example.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/python/class_example.cpp -o CMakeFiles/cmake_example.dir/python/class_example.cpp.s
+
+CMakeFiles/cmake_example.dir/python/entry.cpp.o: CMakeFiles/cmake_example.dir/flags.make
+CMakeFiles/cmake_example.dir/python/entry.cpp.o: ../python/entry.cpp
+CMakeFiles/cmake_example.dir/python/entry.cpp.o: CMakeFiles/cmake_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cmake_example.dir/python/entry.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cmake_example.dir/python/entry.cpp.o -MF CMakeFiles/cmake_example.dir/python/entry.cpp.o.d -o CMakeFiles/cmake_example.dir/python/entry.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/python/entry.cpp
+
+CMakeFiles/cmake_example.dir/python/entry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example.dir/python/entry.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/python/entry.cpp > CMakeFiles/cmake_example.dir/python/entry.cpp.i
+
+CMakeFiles/cmake_example.dir/python/entry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example.dir/python/entry.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/python/entry.cpp -o CMakeFiles/cmake_example.dir/python/entry.cpp.s
+
+CMakeFiles/cmake_example.dir/python/example.cpp.o: CMakeFiles/cmake_example.dir/flags.make
+CMakeFiles/cmake_example.dir/python/example.cpp.o: ../python/example.cpp
+CMakeFiles/cmake_example.dir/python/example.cpp.o: CMakeFiles/cmake_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cmake_example.dir/python/example.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cmake_example.dir/python/example.cpp.o -MF CMakeFiles/cmake_example.dir/python/example.cpp.o.d -o CMakeFiles/cmake_example.dir/python/example.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/python/example.cpp
+
+CMakeFiles/cmake_example.dir/python/example.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example.dir/python/example.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/python/example.cpp > CMakeFiles/cmake_example.dir/python/example.cpp.i
+
+CMakeFiles/cmake_example.dir/python/example.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example.dir/python/example.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/python/example.cpp -o CMakeFiles/cmake_example.dir/python/example.cpp.s
+
+CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o: CMakeFiles/cmake_example.dir/flags.make
+CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o: ../python/init_forwardad.cpp
+CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o: CMakeFiles/cmake_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o -MF CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o.d -o CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o -c /Users/johntedesco/KDS/git/py2cpp/python/init_forwardad.cpp
+
+CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/johntedesco/KDS/git/py2cpp/python/init_forwardad.cpp > CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.i
+
+CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/johntedesco/KDS/git/py2cpp/python/init_forwardad.cpp -o CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.s
 
 # Object files for target cmake_example
 cmake_example_OBJECTS = \
-"CMakeFiles/cmake_example.dir/src/example.cpp.o"
+"CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o" \
+"CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o" \
+"CMakeFiles/cmake_example.dir/src/Pet.cpp.o" \
+"CMakeFiles/cmake_example.dir/python/class_example.cpp.o" \
+"CMakeFiles/cmake_example.dir/python/entry.cpp.o" \
+"CMakeFiles/cmake_example.dir/python/example.cpp.o" \
+"CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o"
 
 # External object files for target cmake_example
 cmake_example_EXTERNAL_OBJECTS =
 
-cmake_example.cpython-39-x86_64-linux-gnu.so: CMakeFiles/cmake_example.dir/src/example.cpp.o
-cmake_example.cpython-39-x86_64-linux-gnu.so: CMakeFiles/cmake_example.dir/build.make
-cmake_example.cpython-39-x86_64-linux-gnu.so: CMakeFiles/cmake_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/giovanni/py2cpp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared module cmake_example.cpython-39-x86_64-linux-gnu.so"
+cmake_example.cpython-39-darwin.so: CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o
+cmake_example.cpython-39-darwin.so: CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o
+cmake_example.cpython-39-darwin.so: CMakeFiles/cmake_example.dir/src/Pet.cpp.o
+cmake_example.cpython-39-darwin.so: CMakeFiles/cmake_example.dir/python/class_example.cpp.o
+cmake_example.cpython-39-darwin.so: CMakeFiles/cmake_example.dir/python/entry.cpp.o
+cmake_example.cpython-39-darwin.so: CMakeFiles/cmake_example.dir/python/example.cpp.o
+cmake_example.cpython-39-darwin.so: CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o
+cmake_example.cpython-39-darwin.so: CMakeFiles/cmake_example.dir/build.make
+cmake_example.cpython-39-darwin.so: CMakeFiles/cmake_example.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared module cmake_example.cpython-39-darwin.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cmake_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/cmake_example.dir/build: cmake_example.cpython-39-x86_64-linux-gnu.so
+CMakeFiles/cmake_example.dir/build: cmake_example.cpython-39-darwin.so
 .PHONY : CMakeFiles/cmake_example.dir/build
 
 CMakeFiles/cmake_example.dir/clean:
@@ -105,6 +201,6 @@ CMakeFiles/cmake_example.dir/clean:
 .PHONY : CMakeFiles/cmake_example.dir/clean
 
 CMakeFiles/cmake_example.dir/depend:
-	cd /home/giovanni/py2cpp2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/giovanni/py2cpp2 /home/giovanni/py2cpp2 /home/giovanni/py2cpp2/build /home/giovanni/py2cpp2/build /home/giovanni/py2cpp2/build/CMakeFiles/cmake_example.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/johntedesco/KDS/git/py2cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/johntedesco/KDS/git/py2cpp /Users/johntedesco/KDS/git/py2cpp /Users/johntedesco/KDS/git/py2cpp/build /Users/johntedesco/KDS/git/py2cpp/build /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles/cmake_example.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cmake_example.dir/depend
 

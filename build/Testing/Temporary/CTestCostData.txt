@@ -1,3 +1,6 @@
-HelloTest.BasicAssertions 4 0.000748442
-PetTest.PetAssertions 1 0.00492519
+HelloTest.BasicAssertions 10 0.000330512
+PetTest.PetAssertions 10 0.000218771
+SquareTest.SomeAssertion 2 0.00205498
+FADTEST.SomethingHere 3 0.000711375
+FADTEST.TestSetFunction 1 0.00397867
 ---

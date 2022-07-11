@@ -4,8 +4,10 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/giovanni/.local/lib/python3.8/site-packages/pybind11/include/",
-                "/usr/include/python3.8"
+                "/opt/homebrew/Cellar/pybind11/2.9.2/libexec/lib/python3.9/site-packages/pybind11/include",
+                "/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/include/python3.9",
+                "/opt/homebrew/Cellar/googletest/1.12.1/include",
+                "/"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

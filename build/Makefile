@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1088/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.23.2/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1088/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/giovanni/py2cpp2
+CMAKE_SOURCE_DIR = /Users/johntedesco/KDS/git/py2cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/giovanni/py2cpp2/build
+CMAKE_BINARY_DIR = /Users/johntedesco/KDS/git/py2cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/giovanni/py2cpp2/build
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/snap/cmake/1088/bin/ctest --force-new-ctest-process $(ARGS)
+	/opt/homebrew/Cellar/cmake/3.23.2/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -78,7 +78,7 @@ test/fast: test
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/snap/cmake/1088/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.23.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/1088/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.23.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -107,44 +107,44 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/cmake/1088/bin/cmake -P cmake_install.cmake
+	/opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/cmake/1088/bin/cmake -P cmake_install.cmake
+	/opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/cmake/1088/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/cmake/1088/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/cmake/1088/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/cmake/1088/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles /home/giovanni/py2cpp2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles /Users/johntedesco/KDS/git/py2cpp/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -196,19 +196,6 @@ cmake_example: cmake_check_build_system
 cmake_example/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/build
 .PHONY : cmake_example/fast
-
-#=============================================================================
-# Target rules for targets named cmake_pets
-
-# Build rule for target.
-cmake_pets: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake_pets
-.PHONY : cmake_pets
-
-# fast build rule for target.
-cmake_pets/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_pets.dir/build.make CMakeFiles/cmake_pets.dir/build
-.PHONY : cmake_pets/fast
 
 #=============================================================================
 # Target rules for targets named hello_test
@@ -275,12 +262,163 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+python/class_example.o: python/class_example.cpp.o
+.PHONY : python/class_example.o
+
+# target to build an object file
+python/class_example.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/class_example.cpp.o
+.PHONY : python/class_example.cpp.o
+
+python/class_example.i: python/class_example.cpp.i
+.PHONY : python/class_example.i
+
+# target to preprocess a source file
+python/class_example.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/class_example.cpp.i
+.PHONY : python/class_example.cpp.i
+
+python/class_example.s: python/class_example.cpp.s
+.PHONY : python/class_example.s
+
+# target to generate assembly for a file
+python/class_example.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/class_example.cpp.s
+.PHONY : python/class_example.cpp.s
+
+python/entry.o: python/entry.cpp.o
+.PHONY : python/entry.o
+
+# target to build an object file
+python/entry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/entry.cpp.o
+.PHONY : python/entry.cpp.o
+
+python/entry.i: python/entry.cpp.i
+.PHONY : python/entry.i
+
+# target to preprocess a source file
+python/entry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/entry.cpp.i
+.PHONY : python/entry.cpp.i
+
+python/entry.s: python/entry.cpp.s
+.PHONY : python/entry.s
+
+# target to generate assembly for a file
+python/entry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/entry.cpp.s
+.PHONY : python/entry.cpp.s
+
+python/example.o: python/example.cpp.o
+.PHONY : python/example.o
+
+# target to build an object file
+python/example.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/example.cpp.o
+.PHONY : python/example.cpp.o
+
+python/example.i: python/example.cpp.i
+.PHONY : python/example.i
+
+# target to preprocess a source file
+python/example.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/example.cpp.i
+.PHONY : python/example.cpp.i
+
+python/example.s: python/example.cpp.s
+.PHONY : python/example.s
+
+# target to generate assembly for a file
+python/example.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/example.cpp.s
+.PHONY : python/example.cpp.s
+
+python/init_forwardad.o: python/init_forwardad.cpp.o
+.PHONY : python/init_forwardad.o
+
+# target to build an object file
+python/init_forwardad.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.o
+.PHONY : python/init_forwardad.cpp.o
+
+python/init_forwardad.i: python/init_forwardad.cpp.i
+.PHONY : python/init_forwardad.i
+
+# target to preprocess a source file
+python/init_forwardad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.i
+.PHONY : python/init_forwardad.cpp.i
+
+python/init_forwardad.s: python/init_forwardad.cpp.s
+.PHONY : python/init_forwardad.s
+
+# target to generate assembly for a file
+python/init_forwardad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/python/init_forwardad.cpp.s
+.PHONY : python/init_forwardad.cpp.s
+
+src/DualNumber.o: src/DualNumber.cpp.o
+.PHONY : src/DualNumber.o
+
+# target to build an object file
+src/DualNumber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/src/DualNumber.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/DualNumber.cpp.o
+.PHONY : src/DualNumber.cpp.o
+
+src/DualNumber.i: src/DualNumber.cpp.i
+.PHONY : src/DualNumber.i
+
+# target to preprocess a source file
+src/DualNumber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/src/DualNumber.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/DualNumber.cpp.i
+.PHONY : src/DualNumber.cpp.i
+
+src/DualNumber.s: src/DualNumber.cpp.s
+.PHONY : src/DualNumber.s
+
+# target to generate assembly for a file
+src/DualNumber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/src/DualNumber.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/DualNumber.cpp.s
+.PHONY : src/DualNumber.cpp.s
+
+src/ForwardAutoDiff.o: src/ForwardAutoDiff.cpp.o
+.PHONY : src/ForwardAutoDiff.o
+
+# target to build an object file
+src/ForwardAutoDiff.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/src/ForwardAutoDiff.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.o
+.PHONY : src/ForwardAutoDiff.cpp.o
+
+src/ForwardAutoDiff.i: src/ForwardAutoDiff.cpp.i
+.PHONY : src/ForwardAutoDiff.i
+
+# target to preprocess a source file
+src/ForwardAutoDiff.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/src/ForwardAutoDiff.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.i
+.PHONY : src/ForwardAutoDiff.cpp.i
+
+src/ForwardAutoDiff.s: src/ForwardAutoDiff.cpp.s
+.PHONY : src/ForwardAutoDiff.s
+
+# target to generate assembly for a file
+src/ForwardAutoDiff.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/src/ForwardAutoDiff.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/ForwardAutoDiff.cpp.s
+.PHONY : src/ForwardAutoDiff.cpp.s
+
 src/Pet.o: src/Pet.cpp.o
 .PHONY : src/Pet.o
 
 # target to build an object file
 src/Pet.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/src/Pet.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/Pet.cpp.o
 .PHONY : src/Pet.cpp.o
 
 src/Pet.i: src/Pet.cpp.i
@@ -289,6 +427,7 @@ src/Pet.i: src/Pet.cpp.i
 # target to preprocess a source file
 src/Pet.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/src/Pet.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/Pet.cpp.i
 .PHONY : src/Pet.cpp.i
 
 src/Pet.s: src/Pet.cpp.s
@@ -297,55 +436,32 @@ src/Pet.s: src/Pet.cpp.s
 # target to generate assembly for a file
 src/Pet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/src/Pet.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/Pet.cpp.s
 .PHONY : src/Pet.cpp.s
 
-src/example.o: src/example.cpp.o
-.PHONY : src/example.o
+test/dual_number_test.o: test/dual_number_test.cpp.o
+.PHONY : test/dual_number_test.o
 
 # target to build an object file
-src/example.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/example.cpp.o
-.PHONY : src/example.cpp.o
+test/dual_number_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/dual_number_test.cpp.o
+.PHONY : test/dual_number_test.cpp.o
 
-src/example.i: src/example.cpp.i
-.PHONY : src/example.i
-
-# target to preprocess a source file
-src/example.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/example.cpp.i
-.PHONY : src/example.cpp.i
-
-src/example.s: src/example.cpp.s
-.PHONY : src/example.s
-
-# target to generate assembly for a file
-src/example.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/src/example.cpp.s
-.PHONY : src/example.cpp.s
-
-src/my_new_example.o: src/my_new_example.cpp.o
-.PHONY : src/my_new_example.o
-
-# target to build an object file
-src/my_new_example.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_pets.dir/build.make CMakeFiles/cmake_pets.dir/src/my_new_example.cpp.o
-.PHONY : src/my_new_example.cpp.o
-
-src/my_new_example.i: src/my_new_example.cpp.i
-.PHONY : src/my_new_example.i
+test/dual_number_test.i: test/dual_number_test.cpp.i
+.PHONY : test/dual_number_test.i
 
 # target to preprocess a source file
-src/my_new_example.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_pets.dir/build.make CMakeFiles/cmake_pets.dir/src/my_new_example.cpp.i
-.PHONY : src/my_new_example.cpp.i
+test/dual_number_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/dual_number_test.cpp.i
+.PHONY : test/dual_number_test.cpp.i
 
-src/my_new_example.s: src/my_new_example.cpp.s
-.PHONY : src/my_new_example.s
+test/dual_number_test.s: test/dual_number_test.cpp.s
+.PHONY : test/dual_number_test.s
 
 # target to generate assembly for a file
-src/my_new_example.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_pets.dir/build.make CMakeFiles/cmake_pets.dir/src/my_new_example.cpp.s
-.PHONY : src/my_new_example.cpp.s
+test/dual_number_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/dual_number_test.cpp.s
+.PHONY : test/dual_number_test.cpp.s
 
 test/hello_test.o: test/hello_test.cpp.o
 .PHONY : test/hello_test.o
@@ -395,6 +511,30 @@ test/pet_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/pet_test.cpp.s
 .PHONY : test/pet_test.cpp.s
 
+test/test_ForwardAD.o: test/test_ForwardAD.cpp.o
+.PHONY : test/test_ForwardAD.o
+
+# target to build an object file
+test/test_ForwardAD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.o
+.PHONY : test/test_ForwardAD.cpp.o
+
+test/test_ForwardAD.i: test/test_ForwardAD.cpp.i
+.PHONY : test/test_ForwardAD.i
+
+# target to preprocess a source file
+test/test_ForwardAD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.i
+.PHONY : test/test_ForwardAD.cpp.i
+
+test/test_ForwardAD.s: test/test_ForwardAD.cpp.s
+.PHONY : test/test_ForwardAD.s
+
+# target to generate assembly for a file
+test/test_ForwardAD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/test_ForwardAD.cpp.s
+.PHONY : test/test_ForwardAD.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -410,27 +550,44 @@ help:
 	@echo "... test"
 	@echo "... cmake_example"
 	@echo "... cmake_example_lib"
-	@echo "... cmake_pets"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... hello_test"
+	@echo "... python/class_example.o"
+	@echo "... python/class_example.i"
+	@echo "... python/class_example.s"
+	@echo "... python/entry.o"
+	@echo "... python/entry.i"
+	@echo "... python/entry.s"
+	@echo "... python/example.o"
+	@echo "... python/example.i"
+	@echo "... python/example.s"
+	@echo "... python/init_forwardad.o"
+	@echo "... python/init_forwardad.i"
+	@echo "... python/init_forwardad.s"
+	@echo "... src/DualNumber.o"
+	@echo "... src/DualNumber.i"
+	@echo "... src/DualNumber.s"
+	@echo "... src/ForwardAutoDiff.o"
+	@echo "... src/ForwardAutoDiff.i"
+	@echo "... src/ForwardAutoDiff.s"
 	@echo "... src/Pet.o"
 	@echo "... src/Pet.i"
 	@echo "... src/Pet.s"
-	@echo "... src/example.o"
-	@echo "... src/example.i"
-	@echo "... src/example.s"
-	@echo "... src/my_new_example.o"
-	@echo "... src/my_new_example.i"
-	@echo "... src/my_new_example.s"
+	@echo "... test/dual_number_test.o"
+	@echo "... test/dual_number_test.i"
+	@echo "... test/dual_number_test.s"
 	@echo "... test/hello_test.o"
 	@echo "... test/hello_test.i"
 	@echo "... test/hello_test.s"
 	@echo "... test/pet_test.o"
 	@echo "... test/pet_test.i"
 	@echo "... test/pet_test.s"
+	@echo "... test/test_ForwardAD.o"
+	@echo "... test/test_ForwardAD.i"
+	@echo "... test/test_ForwardAD.s"
 .PHONY : help
 
 

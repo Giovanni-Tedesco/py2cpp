@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1088/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.23.2/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1088/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/giovanni/py2cpp2
+CMAKE_SOURCE_DIR = /Users/johntedesco/KDS/git/py2cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/giovanni/py2cpp2/build
+CMAKE_BINARY_DIR = /Users/johntedesco/KDS/git/py2cpp/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -65,7 +65,6 @@ CMAKE_BINARY_DIR = /home/giovanni/py2cpp2/build
 # The main recursive "all" target.
 all: CMakeFiles/cmake_example_lib.dir/all
 all: CMakeFiles/cmake_example.dir/all
-all: CMakeFiles/cmake_pets.dir/all
 all: CMakeFiles/hello_test.dir/all
 all: _deps/googletest-build/all
 .PHONY : all
@@ -77,7 +76,6 @@ preinstall: _deps/googletest-build/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/cmake_example_lib.dir/clean
 clean: CMakeFiles/cmake_example.dir/clean
-clean: CMakeFiles/cmake_pets.dir/clean
 clean: CMakeFiles/hello_test.dir/clean
 clean: _deps/googletest-build/clean
 .PHONY : clean
@@ -140,14 +138,14 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/cmake_example_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_lib.dir/build.make CMakeFiles/cmake_example_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/giovanni/py2cpp2/build/CMakeFiles --progress-num=3,4 "Built target cmake_example_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=9,10,11,12 "Built target cmake_example_lib"
 .PHONY : CMakeFiles/cmake_example_lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cmake_example_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cmake_example_lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/cmake_example_lib.dir/rule
 
 # Convenience name for target.
@@ -166,14 +164,14 @@ CMakeFiles/cmake_example_lib.dir/clean:
 CMakeFiles/cmake_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example.dir/build.make CMakeFiles/cmake_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/giovanni/py2cpp2/build/CMakeFiles --progress-num=1,2 "Built target cmake_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target cmake_example"
 .PHONY : CMakeFiles/cmake_example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cmake_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cmake_example.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/cmake_example.dir/rule
 
 # Convenience name for target.
@@ -186,32 +184,6 @@ CMakeFiles/cmake_example.dir/clean:
 .PHONY : CMakeFiles/cmake_example.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cmake_pets.dir
-
-# All Build rule for target.
-CMakeFiles/cmake_pets.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_pets.dir/build.make CMakeFiles/cmake_pets.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_pets.dir/build.make CMakeFiles/cmake_pets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/giovanni/py2cpp2/build/CMakeFiles --progress-num=5,6 "Built target cmake_pets"
-.PHONY : CMakeFiles/cmake_pets.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/cmake_pets.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cmake_pets.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 0
-.PHONY : CMakeFiles/cmake_pets.dir/rule
-
-# Convenience name for target.
-cmake_pets: CMakeFiles/cmake_pets.dir/rule
-.PHONY : cmake_pets
-
-# clean rule for target.
-CMakeFiles/cmake_pets.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_pets.dir/build.make CMakeFiles/cmake_pets.dir/clean
-.PHONY : CMakeFiles/cmake_pets.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/hello_test.dir
 
 # All Build rule for target.
@@ -220,14 +192,14 @@ CMakeFiles/hello_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtes
 CMakeFiles/hello_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/giovanni/py2cpp2/build/CMakeFiles --progress-num=15,16,17 "Built target hello_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=21,22,23,24,25 "Built target hello_test"
 .PHONY : CMakeFiles/hello_test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hello_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hello_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/hello_test.dir/rule
 
 # Convenience name for target.
@@ -246,14 +218,14 @@ CMakeFiles/hello_test.dir/clean:
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/giovanni/py2cpp2/build/CMakeFiles --progress-num=7,8 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=13,14 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -273,14 +245,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/giovanni/py2cpp2/build/CMakeFiles --progress-num=9,10 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=15,16 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -299,14 +271,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/giovanni/py2cpp2/build/CMakeFiles --progress-num=11,12 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=17,18 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -325,14 +297,14 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/giovanni/py2cpp2/build/CMakeFiles --progress-num=13,14 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles --progress-num=19,20 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/giovanni/py2cpp2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/johntedesco/KDS/git/py2cpp/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.

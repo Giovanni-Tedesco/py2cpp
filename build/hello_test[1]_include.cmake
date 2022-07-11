@@ -1,5 +1,5 @@
-if(EXISTS "/home/giovanni/py2cpp2/build/hello_test[1]_tests.cmake")
-  include("/home/giovanni/py2cpp2/build/hello_test[1]_tests.cmake")
+if(EXISTS "/Users/johntedesco/KDS/git/py2cpp/build/hello_test[1]_tests.cmake")
+  include("/Users/johntedesco/KDS/git/py2cpp/build/hello_test[1]_tests.cmake")
 else()
   add_test(hello_test_NOT_BUILT hello_test_NOT_BUILT)
 endif()

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/giovanni/py2cpp2/build/_deps/googletest-src/googlemock
-# Build directory: /home/giovanni/py2cpp2/build/_deps/googletest-build/googlemock
+# Source directory: /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-src/googlemock
+# Build directory: /Users/johntedesco/KDS/git/py2cpp/build/_deps/googletest-build/googlemock
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

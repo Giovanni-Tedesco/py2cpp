@@ -1,24 +1,27 @@
 cmake_minimum_required(VERSION 3.4...3.18)
 project(cmake_example LANGUAGES CXX)
 
+file (GLOB SOURCE_FILES "src/*.cpp")
+file (GLOB HEADER_FILES "include/*.hpp")
+file (GLOB PYTHON_FILES "python/*.cpp" "python/*.hpp")
+file (GLOB TEST_FILES "test/*.cpp")
+
 add_library(cmake_example_lib SHARED 
-  src/Pet.cpp
+  ${SOURCE_FILES}
 )
-# add_subdirectory(extern/pybind11)
+
 find_package(pybind11 CONFIG)
 pybind11_add_module(
   cmake_example 
-  src/example.cpp
-  src/my_new_example.cpp
-  src/Pet.cpp
-  include/Pet.hpp
+  ${SOURCE_FILES}
+  ${HEADER_FILES}
+  ${PYTHON_FILES}
 )
 
 target_include_directories(cmake_example PRIVATE .)
 
 target_compile_definitions(cmake_example
                            PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO})
-
 
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 14)
@@ -36,8 +39,7 @@ enable_testing()
 
 add_executable(
   hello_test
-  test/hello_test.cpp
-  test/pet_test.cpp
+  ${TEST_FILES}
 )
 target_link_libraries(
   hello_test
