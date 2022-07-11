@@ -24,6 +24,7 @@ pybind11_add_module(
 
 target_include_directories(cmake_example PRIVATE .) # include the directory as an include for the target. This way I have access to all folders
 
+
 target_compile_definitions(cmake_example 
                            PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO}) # something to do with pybind11 this was recommeneded in the docs
 
