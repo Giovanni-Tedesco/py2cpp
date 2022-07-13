@@ -23,5 +23,4 @@ void init_DualNumber(py::module &m) {
         .def_static("exp", &DualNumber::exp)
         .def("getReal", &DualNumber::getReal)
         .def("__repr__", &DualNumber::toString);
-        
 }
