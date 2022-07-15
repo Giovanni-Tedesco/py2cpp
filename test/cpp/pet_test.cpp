@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "../include/Pet.hpp"
+#include "../../include/Pet.hpp"
 // Demonstrate some basic assertions.
 TEST(PetTest, PetAssertions) {
     Pet *myPet = new Pet(10, 10);

@@ -13,16 +13,16 @@ double DualNumber::getImag() {
 
 DualNumber operator+(const DualNumber &self, const DualNumber &other){
     return DualNumber(self.real + other.real, self.imag + other.imag);
-} 
+}
 DualNumber operator-(const DualNumber &self, const DualNumber &other){
     return DualNumber(self.real - other.real, self.imag - other.imag);
-} 
+}
 DualNumber operator*(const DualNumber &self, const DualNumber &other){
-    return DualNumber(self.real + other.real, self.real * other.imag + self.imag * other.real);
-} 
+    return DualNumber(self.real * other.real, self.real * other.imag + self.imag * other.real);
+}
 DualNumber operator/(const DualNumber &self, const DualNumber &other){
     return DualNumber(self.real / other.real, (self.real * other.imag - self.imag * other.real) / (other.imag * other.imag));
-} 
+}
 
 DualNumber DualNumber::sin(const DualNumber &x) {
     return DualNumber(std::sin(x.real), x.imag * std::cos(x.real));

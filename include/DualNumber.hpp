@@ -5,6 +5,7 @@
 
 class DualNumber {
 
+// a + be, e^2 = 0, e != 0
 public:
     double real;
     double imag;
@@ -15,10 +16,12 @@ public:
 
     void sayHello();
 
-    friend DualNumber operator+(const DualNumber &Dual1, const DualNumber &Dual2); 
-    friend DualNumber operator-(const DualNumber &Dual1, const DualNumber &Dual2); 
-    friend DualNumber operator*(const DualNumber &Dual1, const DualNumber &Dual2); 
-    friend DualNumber operator/(const DualNumber &Dual1, const DualNumber &Dual2); 
+    // __add__
+    friend DualNumber operator+(const DualNumber &Dual1, const DualNumber &Dual2);
+    // __sub__
+    friend DualNumber operator-(const DualNumber &Dual1, const DualNumber &Dual2);
+    friend DualNumber operator*(const DualNumber &Dual1, const DualNumber &Dual2);
+    friend DualNumber operator/(const DualNumber &Dual1, const DualNumber &Dual2);
 
     std::string toString() {
         return "[" + std::to_string(real) + "," + std::to_string(imag) + "]";

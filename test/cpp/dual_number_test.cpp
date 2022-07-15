@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "../include/DualNumber.hpp"
+#include "../../include/DualNumber.hpp"
 
 DualNumber test_square_function(DualNumber x) {
     return x * x;
@@ -32,9 +32,10 @@ TEST(SquareTest, DerivativeAssertions) {
 
     DualNumber result = test_square_function(x);
 
-    DualNumber expected{6, 9};
+    DualNumber expected{9, 6};
 
     EXPECT_EQ(result.getReal(), expected.getReal());
+    EXPECT_EQ(result.getImag(), expected.getImag());
 };
 
 TEST(SinWorksTest, DerivativeAssertions) {

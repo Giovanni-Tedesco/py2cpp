@@ -22,5 +22,6 @@ void init_DualNumber(py::module &m) {
         .def_static("log", &DualNumber::log)
         .def_static("exp", &DualNumber::exp)
         .def("getReal", &DualNumber::getReal)
+        .def("getImag", &DualNumber::getImag)
         .def("__repr__", &DualNumber::toString);
 }

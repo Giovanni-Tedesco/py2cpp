@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-#include "../include/ForwardAutoDiff.hpp"
-#include "../include/DualNumber.hpp"
+#include "../../include/ForwardAutoDiff.hpp"
+#include "../../include/DualNumber.hpp"
 #include <functional>
 
 DualNumber square(DualNumber x) {
@@ -15,7 +15,7 @@ TEST(FADTEST, TestSetFunction) {
     test.setFunction(f);
     
     DualNumber results = test.deriveAt(3);
-    DualNumber expected{6, 6};
+    DualNumber expected{9, 6};
 
     EXPECT_EQ(results.getReal(), expected.getReal());
     EXPECT_EQ(results.getImag(), expected.getImag());

@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 3.4...3.18) # Set minimum cmake version
 project(cmake_example LANGUAGES CXX) # Give the project a name and declare that it is a C++ project
 
 file (GLOB SOURCE_FILES "src/*.cpp") # Find all C++ files in the src directory
-file (GLOB HEADER_FILES "include/*.hpp") # Find all hpp files in the include directory 
+file (GLOB HEADER_FILES "include/*.hpp") # Find all hpp files in the include directory
 file (GLOB PYTHON_FILES "python/*.cpp" "python/*.hpp") # Find all the python bindings in the python directory
-file (GLOB TEST_FILES "test/*.cpp") # Find all the test files in the test directory 
+file (GLOB TEST_FILES "test/cpp/*.cpp") # Find all the test files in the test directory
 
 
 set(CMAKE_CXX_STANDARD 11) # Set the standard to C++11
 
-add_library(cmake_example_lib SHARED 
+add_library(cmake_example_lib SHARED
   ${SOURCE_FILES}
 ) # Designate the source files as the library (to be compiled into a .so file)
 
@@ -24,8 +24,7 @@ pybind11_add_module(
 
 target_include_directories(cmake_example PRIVATE .) # include the directory as an include for the target. This way I have access to all folders
 
-
-target_compile_definitions(cmake_example 
+target_compile_definitions(cmake_example
                            PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO}) # something to do with pybind11 this was recommeneded in the docs
 
 ### TESTING ###
@@ -56,3 +55,8 @@ target_link_libraries(
 
 include(GoogleTest)
 gtest_discover_tests(cmake_example_tests)
+
+add_test (NAME python-tests
+  COMMAND ${PYTHON_EXECUTABLE} -m pytest ${CMAKE_CURRENT_SOURCE_DIR}
+  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/test/python/
+)
